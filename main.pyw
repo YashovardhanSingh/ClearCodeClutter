@@ -1,9 +1,10 @@
 import os
 
+name = __file__[int(__file__.rindex('\\'))+1::]
 items = os.listdir()
 files1 = [item for item in items if os.path.isfile(item)]
-if 'code.py' in files1:
-    files1.remove('code.py')
+if name in files1:
+    files1.remove(name)
 
 def createFolder(folderName):
     global items
