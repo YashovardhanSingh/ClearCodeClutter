@@ -31,7 +31,7 @@ python = [file for file in files1 if os.path.splitext(file)[1].lower() in python
 moveFiles('Python', python)
 
 javaExt = ['.java', '.class', '.dpj', '.jar', '.jsp', '.']
-java = [file for file in files1 if os.path.splitext(file)[1].lower() in pythonExt]
+java = [file for file in files1 if os.path.splitext(file)[1].lower() in javaExt]
 moveFiles('Java', java)
 
 jsExt = ['.js']
